@@ -12,7 +12,7 @@ const Home = ({ search }) => {
   const allProducts = useSelector((state) => state.FirstReducer.allProducts);
   const dispatch = useDispatch();
   const getAllProducts = async () => {
-    const resp = await axios.get(`https://api.escuelajs.co/api/v1/products`);
+    const resp = await axios.get(`https://fakestoreapi.com/products`);
     setProducts(resp.data);
     dispatch({ type: "ALL_PRODUCTS", data: resp.data });
   };
