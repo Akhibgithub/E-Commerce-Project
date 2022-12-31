@@ -9,7 +9,7 @@ const ProductCard = ({ item, btnName, handlecart }) => {
   return (
     <div className="cards">
       <h3>{item.title.slice(0, 15)}</h3>
-      <img src={item.images} alt="" width="200px" height="200px" />
+      <img src={item.image} alt="" width="200px" height="200px" />
       <h5>Price : ${item.price}</h5>
       <p>{item.description.slice(0, 100)}</p>
       <Button

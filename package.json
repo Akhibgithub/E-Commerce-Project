@@ -1,6 +1,5 @@
 {
   "name": "redux-app",
-  "homepage": "https://Akhibgithub.github.io/E-Commerce-Project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +12,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
-    "gh-pages": "^4.0.0",
     "json-server": "^0.17.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -27,8 +25,6 @@
   },
   "scripts": {
     "start": "set PORT=6004 && react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

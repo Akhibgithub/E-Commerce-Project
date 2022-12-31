@@ -12,6 +12,8 @@ const Home = ({ search }) => {
   const allProducts = useSelector((state) => state.FirstReducer.allProducts);
   const dispatch = useDispatch();
   const getAllProducts = async () => {
+    //https://fakestoreapi.com/products
+    // https://api.escuelajs.co/api/v1/products
     const resp = await axios.get(`https://fakestoreapi.com/products`);
     setProducts(resp.data);
     dispatch({ type: "ALL_PRODUCTS", data: resp.data });
@@ -54,8 +56,8 @@ const Home = ({ search }) => {
   };
   return (
     <div>
-      <div>
-        <ButtonGroup aria-label="Basic example">
+      <div className="C-Btns-div">
+        <ButtonGroup>
           <Button variant="secondary" onClick={() => handleCaregories()}>
             All
           </Button>

@@ -1,3 +1,7 @@
+.C-Btns-div {
+  padding: 2rem 0rem 0rem 2rem;
+}
+
 .card-container {
   height: 100%;
   width: 100%;
@@ -6,7 +10,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .cards {
   height: 27rem;
